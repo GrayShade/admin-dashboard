@@ -31,7 +31,7 @@ a {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr; */
   height: 10rem;
-  padding: 0px 40px 30px 40px;
+  padding: 10px 40px 30px 40px;
 }
 
 #headr-top {
@@ -57,15 +57,19 @@ a {
   grid-row: 1 / 2;
   /* justify-self: end; */
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: flex-end;
+}
+
+#headr-top-r p {
+  font-size: 1.4em;
 }
 
 #headr-botm {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 75%;
+  height: 70%;
 }
 
 #headr-botm-l {
@@ -107,7 +111,7 @@ a {
   grid-row: 2 / 3;
   /* justify-self: end; */
   gap: 1rem;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 #headr-top-l a img,
@@ -129,7 +133,7 @@ button {
 #lbar {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
-  padding: 0px 20px;
+  padding: 10px 20px 0px 10px;
   display: grid;
   min-width: 11rem;
   grid-template-rows: 6rem repeat(auto-fit, minmax(auto, 20rem));
