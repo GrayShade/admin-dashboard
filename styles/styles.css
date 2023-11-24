@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./../fonts/Inter/Inter-VariableFont.ttf');
+}
+
 #headr,
 #lbar,
 #main,
@@ -13,6 +18,7 @@
 }
 
 body {
+  font-family: Inter;
   /* height: 100vh; */
   overflow: visible;
   display: grid;
@@ -35,7 +41,8 @@ body {
 .main-p,
 .main-anoun-divs-title,
 .main-trnd-divs-title {
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-weight: 600;
 }
 
 #lbar {
@@ -80,13 +87,13 @@ body {
 
 #lbar-headr a span {
   padding: 0% 0% 0% 5%;
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 .lbar-list1-itms a span,
 .lbar-list2-itms a span {
   padding: 0% 0% 0% 5%;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 #headr p {
@@ -145,7 +152,7 @@ a {
 
 #headr-top-r p,
 .main-proj-crd-title {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 #headr-top-r img {
@@ -182,12 +189,12 @@ a {
 }
 
 #headr-botm-l-div p:nth-child(even) {
-  font-size: 2em;
+  font-size: 1.7em;
   line-height: 1;
 }
 
 #headr-botm-l-div p:first-child {
-  line-height: 0.5;
+  line-height: 1.5;
 }
 
 #headr-botm-r {
@@ -221,7 +228,7 @@ button {
 
 .main-p {
   align-self: end;
-  font-size: 1.5em;
+  font-size: 1.2em;
   /* padding-left: 20px; */
   margin-bottom: 0.5rem;
 }
@@ -261,6 +268,10 @@ button {
   padding-bottom: 5px;
 }
 
+.main-proj-crd-txt, .main-trnd-divs-p {
+  font-size: 0.9em;
+}
+
 .main-proj-crd-icns {
   justify-self: end;
   align-self: end;
@@ -283,9 +294,10 @@ button {
   display: grid;
   grid-column: 1 / 3;
   padding: 10px 20px;
-  font-size: 0.9em;
+  font-size: 0.8em;
   border: 1px solid grey;
   border-radius: 15px;
+  /* row-gap: 1rem; */
 }
 
 #main-anoun-main-p {
@@ -296,10 +308,17 @@ button {
 .with-topdown-border {
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
+  padding-bottom: 1rem;
+}
+
+.main-anoun-divs {
+  padding: 20px 0px;
+  /* font-size: ; */
 }
 
 .main-anoun-divs-title {
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
+  padding-bottom: 5px;
   font-size: 1.2em;
   /* font-size: ; */
 }
