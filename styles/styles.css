@@ -1,24 +1,22 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('./../fonts/Inter/Inter-VariableFont.ttf');
+  font-family: 'SourceSans';
+  src: url('./../fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf');
 }
 
-#headr,
+/* #headr,
 #lbar,
 #main,
 #main-proj,
 #main-anoun,
 #main-trnd {
-  /* border: 1px solid black; */
-  /* background: lightseagreen; */
-}
+} */
 
 :root {
   height: 100vh;
 }
 
 body {
-  font-family: Inter;
+  font-family: SourceSans;
   /* height: 100vh; */
   overflow: visible;
   display: grid;
@@ -48,13 +46,13 @@ body {
 #lbar {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
-  padding: 10px 20px 0px 10px;
+  padding: 10px 10px 0px 10px;
   display: grid;
-  min-width: 11rem;
+  /* min-width: 11rem; */
   grid-template-rows: 6rem repeat(auto-fit, minmax(auto, 20rem));
   border-right: 1px solid grey;
   /* position: fixed; */
-  /* gap: 10px;*/
+  /* gap: 10px;
 }
 
 #lbar-headr,
@@ -246,6 +244,8 @@ button {
 #main-proj-main-p {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+
+  font-style: italic;
 }
 
 .main-proj-crd {
