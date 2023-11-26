@@ -344,6 +344,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 5px;
+  align-items: center;
 
 }
 
