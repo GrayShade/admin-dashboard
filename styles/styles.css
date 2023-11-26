@@ -15,6 +15,8 @@ body {
   grid-template-columns: 1fr 5fr;
   box-sizing: border-box;
   margin: 0px;
+
+  appearance: none;
 }
 
 * {
@@ -66,14 +68,7 @@ body {
   grid-template-rows: 0fr 0fr 0fr;
   gap: 2rem;
   background: linear-gradient(178.6deg, rgb(20, 36, 50) 11.8%, rgb(124, 143, 161) 83.8%);
-}
-
-#lbar a {
-  color: white;
-}
-
-#lbar a:hover {
-  color: orange;
+  min-width: max-content;
 }
 
 #lbar-headr-icon-div a img {
@@ -90,6 +85,24 @@ body {
 .lbar-list2-itms a span {
   padding: 0% 0% 0% 5%;
   font-size: 1.3em;
+
+  bottom: 10px;
+  left: 10px;
+  /* color: #828282; */
+  color: darkgray;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: #c6e2ff;
+    text-shadow:
+      0 0 2px rgba(202, 228, 225, 0.92),
+      0 0 10px rgba(202, 228, 225, 0.34),
+      0 0 4px rgba(30, 132, 242, 0.52),
+      0 0 7px rgba(30, 132, 242, 0.92),
+      0 0 11px rgba(30, 132, 242, 0.78),
+      0 0 16px rgba(30, 132, 242, 0.92);
+  }
 }
 
 #headr p {
@@ -109,8 +122,8 @@ a {
 }
 
 #headr {
-  height: 10rem;
   padding: 10px 40px 30px 40px;
+  z-index: 0;
 }
 
 #headr-top {
